@@ -1,0 +1,31 @@
+<!-- admin/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+
+<body>
+    <h1>Admin - Gerenciar Produtos</h1>
+    <form id="productForm">
+        <input type="hidden" id="productId">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="price">Preço:</label>
+        <input type="number" id="price" name="price" required>
+        <br>
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+    <h2>Produtos</h2>
+    <div id="productList"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
